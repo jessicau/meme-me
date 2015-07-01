@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="meme_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNJ-mw-d0N">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sFh-0p-gbi"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Album" id="BPa-xh-KN6">
+                                        <connections>
+                                            <action selector="pickImageFromLibrary:" destination="BYZ-38-t0r" id="lz4-nW-NWu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lJj-pM-r1k"/>
+                                    <barButtonItem systemItem="camera" id="br9-xb-1p3">
+                                        <connections>
+                                            <action selector="pickImageFromCamera:" destination="BYZ-38-t0r" id="yt3-Ie-XuX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="umn-AJ-EYd">
+                                <rect key="frame" x="0.0" y="28" width="600" height="528"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="Dq7-wb-7sV">
+                                <rect key="frame" x="16" y="74" width="568" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="n4e-yh-20M">
+                                <rect key="frame" x="16" y="466" width="568" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n4e-yh-20M" firstAttribute="trailing" secondItem="Dq7-wb-7sV" secondAttribute="trailing" id="411-DB-Esf"/>
+                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="top" secondItem="n4e-yh-20M" secondAttribute="bottom" constant="54" id="5rg-Mo-Wan"/>
+                            <constraint firstItem="n4e-yh-20M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FVO-wN-daK"/>
+                            <constraint firstItem="n4e-yh-20M" firstAttribute="leading" secondItem="Dq7-wb-7sV" secondAttribute="leading" id="FWp-XM-gFE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="umn-AJ-EYd" secondAttribute="trailing" constant="-16" id="PVM-h2-zKp"/>
+                            <constraint firstItem="umn-AJ-EYd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="SfH-vT-thL"/>
+                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="top" secondItem="umn-AJ-EYd" secondAttribute="bottom" id="TqJ-du-tVA"/>
+                            <constraint firstAttribute="centerX" secondItem="Dq7-wb-7sV" secondAttribute="centerX" constant="-0.5" id="W39-KP-cvo"/>
+                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="apk-ql-fzb"/>
+                            <constraint firstItem="umn-AJ-EYd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bQL-KJ-8z7"/>
+                            <constraint firstItem="Dq7-wb-7sV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="g0i-JS-aXq"/>
+                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="top" secondItem="umn-AJ-EYd" secondAttribute="bottom" id="u2l-7x-uWP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nNJ-mw-d0N" secondAttribute="bottom" id="zZF-fA-Ywy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nNJ-mw-d0N" secondAttribute="trailing" constant="-16" id="zc0-cV-1yO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomTextField" destination="n4e-yh-20M" id="pa7-6B-f7C"/>
+                        <outlet property="cameraButton" destination="br9-xb-1p3" id="hwH-fP-Hzj"/>
+                        <outlet property="libraryButton" destination="BPa-xh-KN6" id="a1T-8e-ILn"/>
+                        <outlet property="memeImage" destination="umn-AJ-EYd" id="B50-k0-iRm"/>
+                        <outlet property="topTextField" destination="Dq7-wb-7sV" id="NrL-Ut-IH2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="noImage" width="600" height="528"/>
+    </resources>
 </document>
