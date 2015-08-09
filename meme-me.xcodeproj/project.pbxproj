@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BDCE15B1B339A26000274BE /* meme-me-Editor */ = {
+		1BDCE15B1B339A26000274BE /* meme-me */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BDCE17B1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-me-Editor" */;
+			buildConfigurationList = 1BDCE17B1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-me" */;
 			buildPhases = (
 				1BDCE1581B339A26000274BE /* Sources */,
 				1BDCE1591B339A26000274BE /* Frameworks */,
@@ -133,14 +133,14 @@
 			);
 			dependencies = (
 			);
-			name = "meme-me-Editor";
+			name = "meme-me";
 			productName = "meme-me";
 			productReference = 1BDCE15C1B339A26000274BE /* meme-me-Editor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1BDCE1701B339A26000274BE /* meme-me-EditorTests */ = {
+		1BDCE1701B339A26000274BE /* meme-meTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BDCE17E1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-me-EditorTests" */;
+			buildConfigurationList = 1BDCE17E1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-meTests" */;
 			buildPhases = (
 				1BDCE16D1B339A26000274BE /* Sources */,
 				1BDCE16E1B339A26000274BE /* Frameworks */,
@@ -151,7 +151,7 @@
 			dependencies = (
 				1BDCE1731B339A26000274BE /* PBXTargetDependency */,
 			);
-			name = "meme-me-EditorTests";
+			name = "meme-meTests";
 			productName = "meme-meTests";
 			productReference = 1BDCE1711B339A26000274BE /* meme-me-EditorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -188,8 +188,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BDCE15B1B339A26000274BE /* meme-me-Editor */,
-				1BDCE1701B339A26000274BE /* meme-me-EditorTests */,
+				1BDCE15B1B339A26000274BE /* meme-me */,
+				1BDCE1701B339A26000274BE /* meme-meTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,7 +239,7 @@
 /* Begin PBXTargetDependency section */
 		1BDCE1731B339A26000274BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1BDCE15B1B339A26000274BE /* meme-me-Editor */;
+			target = 1BDCE15B1B339A26000274BE /* meme-me */;
 			targetProxy = 1BDCE1721B339A26000274BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -433,7 +433,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BDCE17B1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-me-Editor" */ = {
+		1BDCE17B1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BDCE17C1B339A26000274BE /* Debug */,
@@ -442,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BDCE17E1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-me-EditorTests" */ = {
+		1BDCE17E1B339A26000274BE /* Build configuration list for PBXNativeTarget "meme-meTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BDCE17F1B339A26000274BE /* Debug */,
