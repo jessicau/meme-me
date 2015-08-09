@@ -10,7 +10,7 @@ import UIKit
 
 class Meme: NSObject, UITextViewDelegate {
 
-    init(topText: String, bottomText: String, photo: UIImage?){
+    init(topText: String, bottomText: String, photo: UIImage?, memedImage: UIImage?) {
         
     }
 }
