@@ -8,9 +8,10 @@
 
 import UIKit
 
+// Set up for adding table & collection views later
 class Meme: NSObject, UITextViewDelegate {
 
-    init(topText: String, bottomText: String, photo: UIImage?){
+    init(topText: String, bottomText: String, photo: UIImage?, memedImage: UIImage?) {
         
     }
 }

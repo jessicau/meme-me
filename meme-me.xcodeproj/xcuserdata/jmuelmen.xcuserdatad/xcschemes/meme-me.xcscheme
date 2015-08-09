@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1BDCE15B1B339A26000274BE"
-               BuildableName = "meme-me.app"
-               BlueprintName = "meme-me"
+               BuildableName = "meme-me-Editor.app"
+               BlueprintName = "meme-me-Editor"
                ReferencedContainer = "container:meme-me.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1BDCE1701B339A26000274BE"
-               BuildableName = "meme-meTests.xctest"
-               BlueprintName = "meme-meTests"
+               BuildableName = "meme-me-EditorTests.xctest"
+               BlueprintName = "meme-me-EditorTests"
                ReferencedContainer = "container:meme-me.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1BDCE1701B339A26000274BE"
-               BuildableName = "meme-meTests.xctest"
-               BlueprintName = "meme-meTests"
+               BuildableName = "meme-me-EditorTests.xctest"
+               BlueprintName = "meme-me-EditorTests"
                ReferencedContainer = "container:meme-me.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1BDCE15B1B339A26000274BE"
-            BuildableName = "meme-me.app"
-            BlueprintName = "meme-me"
+            BuildableName = "meme-me-Editor.app"
+            BlueprintName = "meme-me-Editor"
             ReferencedContainer = "container:meme-me.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1BDCE15B1B339A26000274BE"
-            BuildableName = "meme-me.app"
-            BlueprintName = "meme-me"
+            BuildableName = "meme-me-Editor.app"
+            BlueprintName = "meme-me-Editor"
             ReferencedContainer = "container:meme-me.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1BDCE15B1B339A26000274BE"
-            BuildableName = "meme-me.app"
-            BlueprintName = "meme-me"
+            BuildableName = "meme-me-Editor.app"
+            BlueprintName = "meme-me-Editor"
             ReferencedContainer = "container:meme-me.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

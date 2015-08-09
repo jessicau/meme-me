@@ -17,12 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umn-AJ-EYd">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNJ-mw-d0N">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="sFh-0p-gbi"/>
                                 </constraints>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fAf-YA-KgP"/>
                                     <barButtonItem title="Album" id="BPa-xh-KN6">
                                         <connections>
                                             <action selector="pickImageFromLibrary:" destination="BYZ-38-t0r" id="lz4-nW-NWu"/>
@@ -34,13 +38,11 @@
                                             <action selector="pickImageFromCamera:" destination="BYZ-38-t0r" id="yt3-Ie-XuX"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xzv-Ie-VnH"/>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="umn-AJ-EYd">
-                                <rect key="frame" x="0.0" y="28" width="600" height="528"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="Dq7-wb-7sV">
-                                <rect key="frame" x="16" y="74" width="568" height="36"/>
+                                <rect key="frame" x="16" y="72" width="568" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
@@ -49,6 +51,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQH-jg-feS">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Kc0-zV-CrY"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="lOj-pz-d5o">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="6TI-1j-AYf">
+                                            <connections>
+                                                <action selector="shareMeme:" destination="BYZ-38-t0r" id="ORY-bB-I0z"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="GdA-1J-Ovr">
+                                            <connections>
+                                                <action selector="cancelButton:" destination="BYZ-38-t0r" id="lGD-7A-afe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -57,13 +79,16 @@
                             <constraint firstItem="n4e-yh-20M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FVO-wN-daK"/>
                             <constraint firstItem="n4e-yh-20M" firstAttribute="leading" secondItem="Dq7-wb-7sV" secondAttribute="leading" id="FWp-XM-gFE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="umn-AJ-EYd" secondAttribute="trailing" constant="-16" id="PVM-h2-zKp"/>
+                            <constraint firstItem="KQH-jg-feS" firstAttribute="trailing" secondItem="nNJ-mw-d0N" secondAttribute="trailing" id="PiD-cw-Itb"/>
                             <constraint firstItem="umn-AJ-EYd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="SfH-vT-thL"/>
-                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="top" secondItem="umn-AJ-EYd" secondAttribute="bottom" id="TqJ-du-tVA"/>
+                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="top" secondItem="umn-AJ-EYd" secondAttribute="bottom" constant="-44" id="TqJ-du-tVA"/>
                             <constraint firstAttribute="centerX" secondItem="Dq7-wb-7sV" secondAttribute="centerX" constant="-0.5" id="W39-KP-cvo"/>
+                            <constraint firstItem="KQH-jg-feS" firstAttribute="leading" secondItem="umn-AJ-EYd" secondAttribute="leading" id="Wdc-oA-P8a"/>
                             <constraint firstItem="nNJ-mw-d0N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="apk-ql-fzb"/>
                             <constraint firstItem="umn-AJ-EYd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bQL-KJ-8z7"/>
-                            <constraint firstItem="Dq7-wb-7sV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="g0i-JS-aXq"/>
-                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="top" secondItem="umn-AJ-EYd" secondAttribute="bottom" id="u2l-7x-uWP"/>
+                            <constraint firstItem="KQH-jg-feS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cp2-aB-Def"/>
+                            <constraint firstItem="Dq7-wb-7sV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="g0i-JS-aXq"/>
+                            <constraint firstItem="nNJ-mw-d0N" firstAttribute="top" secondItem="umn-AJ-EYd" secondAttribute="bottom" constant="-44" id="u2l-7x-uWP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nNJ-mw-d0N" secondAttribute="bottom" id="zZF-fA-Ywy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nNJ-mw-d0N" secondAttribute="trailing" constant="-16" id="zc0-cV-1yO"/>
                         </constraints>
@@ -73,6 +98,8 @@
                         <outlet property="cameraButton" destination="br9-xb-1p3" id="hwH-fP-Hzj"/>
                         <outlet property="libraryButton" destination="BPa-xh-KN6" id="a1T-8e-ILn"/>
                         <outlet property="memeImage" destination="umn-AJ-EYd" id="B50-k0-iRm"/>
+                        <outlet property="shareButton" destination="6TI-1j-AYf" id="MpB-6j-q0M"/>
+                        <outlet property="toolbar" destination="nNJ-mw-d0N" id="0Rw-GB-X0p"/>
                         <outlet property="topTextField" destination="Dq7-wb-7sV" id="NrL-Ut-IH2"/>
                     </connections>
                 </viewController>
@@ -80,7 +107,4 @@
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <image name="noImage" width="600" height="528"/>
-    </resources>
 </document>

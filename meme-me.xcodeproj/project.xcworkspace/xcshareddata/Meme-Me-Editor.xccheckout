@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C7198931-48F9-4B1F-81BD-0835FFA1983B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Meme-Me-Editor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>37A86C8023797F058AD07FF6E8DE812D81ED8645</key>
+		<string>https://github.com/jessicau/meme-me.git</string>
+		<key>76E9D5E24BB2595890AE15B9459DDBED605C83CE</key>
+		<string>https://github.com/jessicau/meme-me.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Meme-Me-Editor.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>37A86C8023797F058AD07FF6E8DE812D81ED8645</key>
+		<string>../..</string>
+		<key>76E9D5E24BB2595890AE15B9459DDBED605C83CE</key>
+		<string>../..meme-me/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jessicau/meme-me.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>37A86C8023797F058AD07FF6E8DE812D81ED8645</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>37A86C8023797F058AD07FF6E8DE812D81ED8645</string>
+			<key>IDESourceControlWCCName</key>
+			<string>meme-me</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>76E9D5E24BB2595890AE15B9459DDBED605C83CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>meme-me</string>
+		</dict>
+	</array>
+</dict>
+</plist>
