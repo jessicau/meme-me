@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var toolbar: UIToolbar!
+    @IBOutlet weak var topNav: UINavigationBar!
 
     
     let memeTextAttributes = [
@@ -72,7 +73,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             (s: String!, ok: Bool, items: [AnyObject]!, err:NSError!) -> Void in self.save()
             self.dismissViewControllerAnimated(true, completion: nil)
         }
-        self.presentViewController(avc, animated: true, completion: nil)
+        
+        // Launch Activity View for iPhone
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone) {
+            self.presentViewController(avc, animated: true, completion: nil)
+        } else { // Launch Activity View for iPad
+            // Change Rect to position Popover
+            var popoverCntlr = UIPopoverController(contentViewController: avc)
+            popoverCntlr.presentPopoverFromRect(CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/4, 0, 0), inView: self.view, permittedArrowDirections: UIPopoverArrowDirection.Any, animated: true)
+        }
     }
     
     func save() -> UIImage {
@@ -84,6 +93,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func generateMemedImage() -> UIImage
     {
         toolbar.hidden = true
+        topNav.hidden = true
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -93,6 +103,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         UIGraphicsEndImageContext()
         
         toolbar.hidden = false
+        topNav.hidden = false
         
         return memedImage
     }

@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="meme_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="meme_me_Editor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -100,6 +100,7 @@
                         <outlet property="memeImage" destination="umn-AJ-EYd" id="B50-k0-iRm"/>
                         <outlet property="shareButton" destination="6TI-1j-AYf" id="MpB-6j-q0M"/>
                         <outlet property="toolbar" destination="nNJ-mw-d0N" id="0Rw-GB-X0p"/>
+                        <outlet property="topNav" destination="KQH-jg-feS" id="AxS-is-LCW"/>
                         <outlet property="topTextField" destination="Dq7-wb-7sV" id="NrL-Ut-IH2"/>
                     </connections>
                 </viewController>
