@@ -130,7 +130,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        self.presentViewController(imagePicker, animated: true, completion: nil)
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
     
     // Launch camera from Camera button
@@ -138,7 +138,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
-        self.presentViewController(imagePicker, animated: true, completion: nil)
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
     
     // Load picked image to view, dimiss view controller
@@ -168,11 +168,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func keyboardWillShow(notification: NSNotification) {
-        self.view.frame.origin.y -= getKeyboardHeight(notification)
+        if bottomTextField.isFirstResponder() {
+            self.view.frame.origin.y -= getKeyboardHeight(notification)
+        }
     }
     
     func keyboardWillHide(notification: NSNotification) {
-        self.view.frame.origin.y += getKeyboardHeight(notification)
+        if bottomTextField.isFirstResponder() {
+            self.view.frame.origin.y += getKeyboardHeight(notification)
+        }
     }
     
     func getKeyboardHeight(notification: NSNotification) -> CGFloat {
