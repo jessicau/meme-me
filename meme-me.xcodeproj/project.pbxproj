@@ -167,7 +167,6 @@
 				TargetAttributes = {
 					1BDCE15B1B339A26000274BE = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = AT7S4C746C;
 					};
 					1BDCE1701B339A26000274BE = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -351,18 +350,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "meme-me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< HEAD
-				PRODUCT_NAME = "meme-me";
-				PROVISIONING_PROFILE = "";
-||||||| merged common ancestors
-				PRODUCT_NAME = "meme-me";
-=======
 				PRODUCT_NAME = "meme-me-Editor";
->>>>>>> memeMe-MemeEditor
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -371,18 +361,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "meme-me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< HEAD
-				PRODUCT_NAME = "meme-me";
-				PROVISIONING_PROFILE = "";
-||||||| merged common ancestors
-				PRODUCT_NAME = "meme-me";
-=======
 				PRODUCT_NAME = "meme-me-Editor";
->>>>>>> memeMe-MemeEditor
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
