@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		1B03BAA41B3BA54700C3EF63 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
 		1B03BAA61B3BBA9500C3EF63 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
-		1BDCE15C1B339A26000274BE /* meme-me-Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meme-me-Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDCE15C1B339A26000274BE /* meme-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meme-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDCE1601B339A26000274BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDCE1611B339A26000274BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BDCE1631B339A26000274BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		1BDCE15D1B339A26000274BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BDCE15C1B339A26000274BE /* meme-me-Editor.app */,
+				1BDCE15C1B339A26000274BE /* meme-me.app */,
 				1BDCE1711B339A26000274BE /* meme-me-EditorTests.xctest */,
 			);
 			name = Products;
@@ -135,7 +135,7 @@
 			);
 			name = "meme-me";
 			productName = "meme-me";
-			productReference = 1BDCE15C1B339A26000274BE /* meme-me-Editor.app */;
+			productReference = 1BDCE15C1B339A26000274BE /* meme-me.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1BDCE1701B339A26000274BE /* meme-meTests */ = {
@@ -352,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "meme-me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "meme-me-Editor";
+				PRODUCT_NAME = "meme-me";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -363,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "meme-me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "meme-me-Editor";
+				PRODUCT_NAME = "meme-me";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
