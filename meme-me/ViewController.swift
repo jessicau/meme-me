@@ -122,10 +122,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return true
     }
     
-    @IBAction func saveMeme(sender: AnyObject) {
-        self.memeImage.image = generateMemedImage()
-    }
-    
     // Using the "Album" button, select an image from the Photo Library
     @IBAction func pickImageFromLibrary(sender: AnyObject) {
         let imagePicker = UIImagePickerController()
@@ -146,8 +142,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             shareButton.enabled = true
-            self.memeImage.image = image
-            self.dismissViewControllerAnimated(true, completion: nil)
+            memeImage.image = image
+            dismissViewControllerAnimated(true, completion: nil)
         }
     }
     
