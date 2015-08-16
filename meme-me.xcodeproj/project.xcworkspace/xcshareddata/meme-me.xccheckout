@@ -22,7 +22,7 @@
 		<key>37A86C8023797F058AD07FF6E8DE812D81ED8645</key>
 		<string>../..</string>
 		<key>76E9D5E24BB2595890AE15B9459DDBED605C83CE</key>
-		<string>../..meme-me</string>
+		<string>../..meme-me/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jessicau/meme-me.git</string>
@@ -46,7 +46,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>76E9D5E24BB2595890AE15B9459DDBED605C83CE</string>
 			<key>IDESourceControlWCCName</key>
-			<string>meme-mememe-me</string>
+			<string>meme-me</string>
 		</dict>
 	</array>
 </dict>

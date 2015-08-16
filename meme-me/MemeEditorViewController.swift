@@ -49,11 +49,15 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        // Hide table & collection tab bar when showing Meme Editor View
+        self.tabBarController?.tabBar.hidden = true
         subscribeToKeyboardNotifications()
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
+        // Show table & collection tab bar when dismissing Meme Editor View
+        self.tabBarController?.tabBar.hidden = false
         unsubscribeFromKeyboardNotifications()
     }
     
@@ -62,7 +66,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         topTextField.text = "TOP"
         bottomTextField.text = "BOTTOM"
         shareButton.enabled = false
-        dismissViewControllerAnimated(true, completion: nil)
+        navigationController?.popViewControllerAnimated(true)
     }
     
     @IBAction func shareMeme(sender: AnyObject) {
@@ -89,13 +93,20 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     func save() -> UIImage {
         var memedImage = generateMemedImage()
         var meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, photo: memeImage.image!, memedImage: memedImage)
+        
+        // Add it to the memes array in the Application Delegate
+        let object = UIApplication.sharedApplication().delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(meme)
+        
         return memedImage
     }
     
     func generateMemedImage() -> UIImage
     {
+        // Hide toolbar & navbar to create image instance
         toolbar.hidden = true
-        topNav.hidden = true
+        navigationController?.navigationBarHidden = true
         
         // Render view to an image
         UIGraphicsBeginImageContext(view.frame.size)
@@ -104,8 +115,9 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
+        // Show toolbar and navbar after image is created
         toolbar.hidden = false
-        topNav.hidden = false
+        navigationController?.navigationBarHidden = false
         
         return memedImage
     }

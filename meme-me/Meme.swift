@@ -8,7 +8,7 @@
 
 import UIKit
 
-// Set up for adding table & collection views later
+// Anatomy of a Meme
 struct Meme {
     var topText: String
     var bottomText: String
